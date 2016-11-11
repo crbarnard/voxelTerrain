@@ -7,7 +7,7 @@ set (blub_VERSION_MINOR 2)
 
 # Initialize CXXFLAGS.
 if (NOT MSVC)
-  set(CMAKE_CXX_FLAGS                "-Wall -std=c++11 -Wno-unused-variable ${CMAKE_CXX_FLAGS}")
+  set(CMAKE_CXX_FLAGS                "-Wall -std=c++11 -Wno-unused-variable -lpthread ${CMAKE_CXX_FLAGS}")
 endif()
 #set(CMAKE_CXX_FLAGS_DEBUG          "-O0 -g -D_DEBUG")
 #set(CMAKE_CXX_FLAGS_MINSIZEREL     "-Os -DNDEBUG")
